@@ -20,7 +20,13 @@ const Contacto = () => {
           </div>
           <div className="grow-[3] flex flex-col justify-evenly">
             <p>{translate[language].contactoTel}</p>
-            <p>Email: hi@arca.com.ar</p>
+            <div className="flex">
+              <p className="mr-2">Email:</p>
+              <Link className="hover:text-naranja" href="mailto:hi@arca.com.ar">
+                <p>hi@arca.com.ar</p>
+              </Link>
+            </div>
+
             <p>Villa Urquiza, Ciudad Autónoma de Buenos Aires</p>
             <div className="flex justify-evenly text-light">
               <Link

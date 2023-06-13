@@ -120,7 +120,7 @@ menu{
 .change .bar3{
  transform: rotate(45deg) translate(-10px, -4px);
 }
-@media (max-width: 725px){
+@media (max-width: 767px){
  .hamburg{
   display: flex;
   align-items: flex-start;

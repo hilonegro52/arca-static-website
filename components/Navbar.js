@@ -14,20 +14,25 @@ const Navbar = () => {
   const menuContainerRef = useRef(null);
 
   useEffect(() => {
+    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
     window.prevScroll = window.pageYOffset;
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  const handleResize = () => {
+    if (window.innerWidth < 767) menuContainerRef.current.style.top = "auto";
+  };
   const handleScroll = (e) => {
     //esconde el menu
     let currentScroll = window.pageYOffset;
-    if (e.currentTarget.prevScroll > currentScroll && window.innerWidth > 725) {
+    if (e.currentTarget.prevScroll > currentScroll && window.innerWidth > 767) {
       menuContainerRef.current.style.top = "0";
-    } else if (window.innerWidth > 725) {
+    } else if (window.innerWidth > 767) {
       menuContainerRef.current.style.top = "-105px";
     }
     e.currentTarget.prevScroll = currentScroll;

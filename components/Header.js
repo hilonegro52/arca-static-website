@@ -5,7 +5,7 @@ export const Header = () => {
   const { language, translate } = useLanguage();
 
   return (
-    <div className="flex flex-col items-center justify-center md:items-start absolute z-20 w-full mt-14 md:mt-40">
+    <div className="flex flex-col items-center justify-center md:items-start absolute z-20 w-full mt-40">
       <div className="w-full md:w-[80%] 2xl:w-[70%] bg-dark opacity-80 pt-1 pb-3 md:pb-4 md:pt-3 px-4 flex justify-end">
         <div className="max-w-[800px] mt-2 md:mt-0">
           <h1 className="text-light text-center md:text-right hero-shadow-h1 text-3xl md:text-[40px] tracking-widest leading-tight">

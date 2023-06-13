@@ -7,33 +7,42 @@ const Porque = () => {
   const imgRef = useRef(null);
   let x = 0;
   let old = 0;
-  /* useEffect(() => {
+  let position = 70;
+  let offset = 0;
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); */
+  }, []);
 
-  /* const handleScroll = (e) => {
+  const handleScroll = (e) => {
     if (window.innerWidth > 726) {
       let imgRefY = imgRef.current.getBoundingClientRect();
       if (window.pageYOffset === 0) x = 0;
-      //if (imgRefY.bottom < 10 && imgRefY.bottom > -10) x = 0;
       if (window.innerHeight >= imgRefY.y && imgRefY.bottom > 0) {
         if (window.pageYOffset > old) {
           x++;
-          imgRef.current.style.transform =
-            "translate3d(" + x * 2 + "px,0px,0px)";
+          /* if (position > 1) {
+            position = position - offset;
+            console.log(position);
+            imgRef.current.style.objectPosition = position + "%";
+            offset += 0.005;
+          } */
         } else {
           x--;
-          imgRef.current.style.transform =
-            "translate3d(" + x * 2 + "px,0px,0px)";
+          /* if (position < 99) {
+            position = position + offset;
+            console.log(position);
+            imgRef.current.style.objectPosition = position + "%";
+            offset -= 0.005;
+          } */
         }
       }
       old = window.pageYOffset;
     }
-  }; */
+  };
 
   return (
     <div
@@ -59,7 +68,7 @@ const Porque = () => {
       <section className="">
         <img
           ref={imgRef}
-          className="z-[-1] left-[0px] md:left-[100px] xl:left-[350px] h-[450px] md:h-[800px] object-cover"
+          className="avion z-[-1] h-[450px] md:h-[800px] object-cover"
           src="/porque.jpg"
           alt=""
         />
@@ -69,4 +78,4 @@ const Porque = () => {
 };
 
 export default Porque;
-//la imagen va absolute
+//la imagen va absolute - left-[0px] md:left-[100px] xl:left-[350px]

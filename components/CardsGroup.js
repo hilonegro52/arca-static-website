@@ -5,11 +5,12 @@ const CardsGroup = () => {
   const { language, translate } = useLanguage();
   return (
     <div className="w-full bg-light dark:bg-darkDark pb-8 md:pb-20">
-      <div className="max-w-[1280px] m-auto grid grid-cols-1 grid-rows-2 md:grid-cols-2 gap-8 p-4 lg:p-0">
+      <div className="max-w-[1280px] m-auto grid grid-cols-1 grid-rows-2 md:grid-cols-2 gap-8 p-4 xl:p-0">
         <Card
           img="/innovacion.jpg"
           title={translate[language].cardFront1}
           backText={translate[language].cardBack1}
+          align=""
         />
         <Card
           img="/ingreso.jpg"

@@ -13,7 +13,7 @@ export const useForm = (initialForm, validateForm) => {
   useEffect(() => {
     if (Object.keys(errors).length === 0 && submit) {
       setLoading(true);
-      fetch("http://localhost:3000/sendmail", {
+      fetch("https://www.arca.com.ar/sendmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

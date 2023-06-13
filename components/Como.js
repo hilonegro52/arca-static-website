@@ -19,6 +19,7 @@ const HeroBottom = () => {
   const handleScroll = (e) => {
     let heroBottomRefTopY = heroBottomRef.current.getBoundingClientRect();
     if (window.innerHeight >= heroBottomRefTopY.y) {
+      imgRef.current.style.display = "block";
       let posicionY = heroBottomRefTopY.y;
       let posicionParallax = posicionY * 0.2;
       imgRef.current.style.transform =
@@ -64,7 +65,7 @@ const HeroBottom = () => {
         </section>
       </div>
       <img
-        className="w-full fixed top-0 z-[-2] object-cover object-[55%] md:object-[35%] h-[750px] md:h-[1080px]"
+        className="hidden w-full fixed top-0 z-[-2] object-cover object-[55%] md:object-[35%] h-[750px] md:h-[1080px]"
         src="/como.jpg"
         alt=""
         ref={imgRef}
