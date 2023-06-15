@@ -28,7 +28,7 @@ const Card = ({ img, title, backText, align }) => {
         <div className="back relative rounded-3xl overflow-hidden bg-naranja">
           <img className="invisible" src="/ingreso.jpg" alt="" />
           <div className="absolute top-0 bottom-0 flex items-center p-10 ">
-            <p className="text-light leading-7 md:leading-normal lg:leading-relaxed text-xl md:text-[21px] lg:text-3xl xl:text-4xl">
+            <p className="text-light leading-7 md:leading-normal lg:leading-relaxed xl:leading-[4rem] text-xl md:text-[21px] lg:text-3xl xl:text-4xl">
               {backText}
             </p>
           </div>
