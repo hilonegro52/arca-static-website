@@ -69,7 +69,7 @@ const Porque = () => {
         <img
           ref={imgRef}
           className="avion z-[-1] h-[450px] md:h-[800px] object-cover"
-          src="/porque.jpg"
+          src="/porque.webp"
           alt=""
         />
       </section>

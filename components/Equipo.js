@@ -14,7 +14,7 @@ const Equipo = () => {
       <section>
         <img
           className="w-full object-cover h-[250px] object-[56%] md:h-[491px] md:object-[56%] lg:object-[63%]"
-          src="/equipo.jpg"
+          src="/equipo.webp"
           alt=""
         />
       </section>

@@ -66,7 +66,7 @@ const HeroBottom = () => {
       </div>
       <img
         className="hidden w-full fixed top-0 z-[-2] object-cover object-[55%] md:object-[35%] h-[750px] md:h-[1080px]"
-        src="/como.jpg"
+        src="/como.webp"
         alt=""
         ref={imgRef}
       />

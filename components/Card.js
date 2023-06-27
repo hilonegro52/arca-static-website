@@ -18,7 +18,7 @@ const Card = ({ img, title, backText, align }) => {
           {/* <div className="absolute top-0 right-0 left-0 bottom-0 m-auto bg-naranja"></div> */}
           <div className="w-full h-full absolute top-0 px-4 md:px-8 flex">
             <h2
-              className={`text-[4.7rem] md:text-[4.8rem] lg:text-[7rem] xl:text-[9.4rem] break-all ${align} text-light`}
+              className={`text-[4.7rem] md:text-[4.8rem] lg:text-[7rem] 2xl:text-[9.4rem] break-all ${align} text-light`}
             >
               {title}
             </h2>
@@ -26,7 +26,7 @@ const Card = ({ img, title, backText, align }) => {
         </div>
 
         <div className="back relative rounded-3xl overflow-hidden bg-naranja">
-          <img className="invisible" src="/ingreso.jpg" alt="" />
+          <img className="invisible" src="/ingreso.webp" alt="" />
           <div className="absolute top-0 bottom-0 flex items-center p-10 ">
             <p className="text-light leading-7 md:leading-normal lg:leading-relaxed xl:leading-[4rem] text-xl md:text-[21px] lg:text-3xl xl:text-4xl">
               {backText}

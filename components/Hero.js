@@ -24,7 +24,7 @@ const Hero = () => {
         autoPlay
         muted
         loop
-        src="/heroMov.mp4"
+        src="/heroMov.webm"
       />
     </div>
   );
